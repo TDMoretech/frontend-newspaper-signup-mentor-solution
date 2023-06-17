@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width-device-width, intial=scale = 1.0">
+
+    <link rel="shortcut icon" href="./favicon-32x32.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+        <title>Newspaper Form Submission</title>
+    </head>
+    <body>
+        <!--sing-up-form-start--> 
+        <div class="content" id="phase">
+            <div class="mainForm">
+               <div class="textForm">
+                   <h1>Stay updated!</h1>
+                    <p>Join 60,000+ product managers receiving monthly updates on:</p>
+                    <ul>
+                        <li>Product discovery and building what matters.</li>
+                        <li>Measuring to ensure updates are a success.</li>
+                        <li>And much more!</li>
+                    </ul>
+
+                    <form id="email-form">
+                        <label class="emailInput">Email address</label>
+                        <div class="mail-box">
+                            <input type="text" placeholder="email@company.com" id="mail" name="email">
+                        </div>      
+                        <button type="submit" class="btn" onclick="openPopup()">Subscribe to monthly newsletter</button>
+                    </form>    
+                 </div>
+                   <picture class="picture">
+                       <!--Mobile img start-->
+                        <source media="(max-width: 576px)" srcset="/illustration-sign-up-mobile.svg" alt="illustration-sign-up-mobile" id="image">
+                        <!--Mobile img end-->
+
+                        <!--Default img start-->
+                        <img src="illustration-sign-up-desktop.svg" alt="desktop image">
+                        <!--Default img end-->
+                    </picture>
+                </div>
+                <!--sign-up-form-end-->
+
+                <!--success form start-->
+                <div class="message">
+                    <div class="popup" id="popup">
+                        <div class="sms">
+                           <img src="icon-success.svg" alt="successful icon">
+                           <h1>Thanks for subscribing!</h1>
+                           <p>A confirmation email has been sent to <span id="message"><b>timhost390@gmail.com.</b></span> Please open it and click the button inside to confrim your subscription. </p>
+
+                           <button type="button" onclick="closePopup()">Dismiss message</button>
+                        </div>
+                    </div>
+                </div>
+                <!--success form end-->
+            </div>
+        </div>      
+        <script src="index.js"></script>
+    </body>
+</html>
