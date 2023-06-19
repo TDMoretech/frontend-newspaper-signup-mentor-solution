@@ -22,8 +22,9 @@
                         <li>And much more!</li>
                     </ul>
 
-                    <form id="email-form">
+                    <form class="email-form">
                         <label class="emailInput">Email address</label>
+                        <label class="emailInput"> Valid email required</lable>
                         <div class="mail-box">
                             <input type="text" placeholder="email@company.com" id="mail" name="email">
                         </div>      
@@ -31,12 +32,12 @@
                     </form>    
                  </div>
                    <picture class="picture">
-                       <!--Mobile img start-->
-                        <source media="(max-width: 576px)" srcset="/illustration-sign-up-mobile.svg" alt="mobile image" id="image">
-                        <!--Mobile img end-->
-                        <!--Default img start-->
-                        <img src="illustration-sign-up-desktop.svg" alt="desktop image">
+                       <!--Default img start-->
+                        <source media="(min-width: 570px)" srcset="/illustration-sign-up-desktop.svg" alt="desktop image">
                         <!--Default img end-->
+                        <!--Mobile img start-->
+                        <img src="illustration-sign-up-mobile.svg" alt="mobile image">
+                        <!--Mobile img end-->
                     </picture>
             </div>
             </div>
