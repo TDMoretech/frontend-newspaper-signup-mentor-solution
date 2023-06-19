@@ -154,7 +154,7 @@ input {
 }
 
 /*******  Mobile  ******/
-@media (max-width: 570px) {
+@media (max-width: 540px) {
 
     body {
         background-color: rgb(245, 245 ,245);
@@ -162,41 +162,27 @@ input {
     
     .content .mainForm {
         display: flex;
-        justify-content: center;
         flex-direction: column-reverse;
-        background-color: none;
-        height: 700px;
-        width: 100%;
+        background-color: nonee;
         border: none;
         border-radius: 0;
         box-sizing: content-box;
     }
 
     .textForm {
-        padding-top: 0;
-        font-size: 22px;
-        padding-left: 25px;
+        padding: 1.5rem;
     }
 
     .textForm h1 {
         font-weight: 900;
         font-family: monospace;
-        font-size: 42px;
     }
 
     .textForm p,
     .textForm ul li  {
         font-weight: 500;
     }
-
-    .textForm ul li {
-        padding-top: 15px;
-    }
-
-    form, .email #errorAlert,
-    #emailInput {
-        font-size: 12px;
-    }
+    
     form #mail .btn {
         display: flex;
         justify-content: space-around;
@@ -204,11 +190,5 @@ input {
     
     input {
         width: 100%;
-        height: 60px;
-    } 
-    
-    .textForm button {
-        width: 100%;
-        height: 70px;       
     }
 }
