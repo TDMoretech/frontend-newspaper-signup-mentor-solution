@@ -103,14 +103,14 @@ input {
     background: rgb(233, 45, 45);
 }
 
-img {
+/*img {
     display: block;
     max-width: 100%;
-}
+}*/
 
 .picture img {
     width: 100%;
-    height: 440px;
+    height: 425px;
 }
 
 .message {
@@ -179,7 +179,7 @@ img {
         display: flex;
         flex-direction: column-reverse;
        background-color: none;
-        width: 100%;
+        width: 85%;
         border: none;
         border-radius: 0;
         padding-top: none;
