@@ -22,41 +22,41 @@
                         <li>And much more!</li>
                     </ul>
 
-                    <form class="email-form">
+                    <form id="emailForm">
                         <label class="emailInput">Email address</label>
-                        <label class="emailInput"> Valid email required</lable>
+                        <label id="errorAlert">bb</label>
                         <div class="mail-box">
                             <input type="text" placeholder="email@company.com" id="mail" name="email">
                         </div>      
-                        <button type="submit" class="btn" onclick="openPopup()">Subscribe to monthly newsletter</button>
+                        <button type="submit" class="btn" onclick="ValidateEmail(open-popup)">Subscribe to monthly newsletter</button>
                     </form>    
                  </div>
                    <picture class="picture">
-                       <!--Default img start-->
-                        <source media="(min-width: 540px)" srcset="illustration-sign-up-desktop.svg" alt="desktop image">
-                        <!--Default img end-->
-                        <!--Mobile img start-->
-                        <img src="illustration-sign-up-mobile.svg" alt="mobile image">
+                       <!--Mobile img start-->
+                        <source media="(min-width: 540px)" srcset="illustration-sign-up-desktop.svg" alt="desktop image" >
                         <!--Mobile img end-->
+                        <!--Default img start-->
+                       <img src="illustration-sign-up-mobile.svg" alt="Mobile image">
+                       <!--Default img end-->
                     </picture>
+                </div>
             </div>
-            </div>
-         <!--sign-up-form-end-->
-        
-        <!--success form start-->
-                <div class="message">
-                    <div class="popup" id="popup">
-                        <div class="sms">
-                           <img src="icon-success.svg" alt="successful icon">
-                           <h1>Thanks for subscribing!</h1>
-                           <p>A confirmation email has been sent to <span id="message"><b>timhost390@gmail.com.</b></span> Please open it and click the button inside to confrim your subscription. </p>
+            <!--sign-up-form-end-->
 
-                           <button type="button" onclick="closePopup()">Dismiss message</button>
-                        </div>
+            <!--success form start-->
+            <div class="message open-popup" id="popup">
+                <div class="popup">
+                    <div class="sms">
+                       <img src="icon-success.svg" alt="successful icon">
+                       <h1>Thanks for subscribing!</h1>
+                       <p>A confirmation email has been sent to <span id="message">ash#loremcompany.com.</span> Please open it and click the button inside to confrim your subscription. </p>
+
+                       <button type="button">Dismiss message</button>
                     </div>
                 </div>
-                <!--success form end-->
-       </div>      
+            </div>
+            <!--success form end-->
+        </div>      
         <script src="index.js"></script>
     </body>
 </html>
