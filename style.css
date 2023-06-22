@@ -184,7 +184,7 @@ input {
         border-radius: 0;
         padding-top: none;
         box-sizing: content-box;
-        min-height: 200vh;
+        min-height: 150vh;
     }
 
     .textForm {
