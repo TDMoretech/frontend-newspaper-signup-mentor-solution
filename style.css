@@ -6,6 +6,8 @@
 
 body {
     background-color: #190521;
+    line-height: 1.6;
+    min-height: 100vh;
 }
 
 .content {
@@ -56,7 +58,7 @@ ul li {
 }
 
 form {
-    padding: 13px;
+    margin-top: auto !important;
 }
 
 .emailInput{
@@ -67,10 +69,18 @@ form {
 
 input {
     width: 100%;
-    height: 38px;
+    padding: 0.75em;
     margin: 10px 0;
     border: 1px solid rgb(221, 218, 218);
     border-radius: 8px;
+}
+
+#errorAlert {
+    font-size: 10px;
+    font-weight: 900;
+    padding: 2px;
+    float: right;
+    color: rgb(233, 45, 45);
 }
 
 ::placeholder {
@@ -81,8 +91,7 @@ input {
 
 .textForm button {
     width: 100%;
-    height: 45px;
-    margin: 10px 0;
+    padding: 1em;
     background-color: #190521;
     color: rgb(245, 245 ,245);
     border: 1px solid;
@@ -94,6 +103,11 @@ input {
     background: rgb(233, 45, 45);
 }
 
+img {
+    display: block;
+    max-width: 100%;
+}
+
 .picture img {
     width: 100%;
     height: 410px;
@@ -103,22 +117,25 @@ input {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    padding-top: 50px;
+    min-height: 100vh;
 }
 
 .popup {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    width: 400px;
-    height: 400px;
     background-color: rgb(245, 245 ,245);
     border-radius: 20px;
+    width: 400px;
+    height: 400px;
+}
+/** hides the element **/
+.open-popup {
+    display: none;
 }
 
 .sms {
     padding: 35px;
-    font-size: 15px;
 }
 
 .sms img {
@@ -133,9 +150,7 @@ input {
 }
 
 .sms p {
-    padding-top: 15px;
     font-weight: 400;
-    font-size: 15px;
 }
 
 .sms button {
@@ -159,36 +174,57 @@ input {
     body {
         background-color: rgb(245, 245 ,245);
     }
-    
+
     .content .mainForm {
         display: flex;
         flex-direction: column-reverse;
-        background-color: nonee;
+       background-color: none;
+        width: 100%;
         border: none;
         border-radius: 0;
+        padding-top: none;
         box-sizing: content-box;
+        min-height: 148vh;
     }
 
     .textForm {
-        padding: 1.5rem;
+        padding-top: 0;
+        font-size: 20px;
+        padding-left: 25px;
+        align-items: center;
     }
 
     .textForm h1 {
         font-weight: 900;
         font-family: monospace;
+        font-size: 40px;
     }
 
     .textForm p,
     .textForm ul li  {
         font-weight: 500;
     }
-    
-    form #mail .btn {
-        display: flex;
-        justify-content: space-around;
+
+    .textForm ul li {
+        padding-top: 20px;
+    }
+
+    form .emailInput,
+    ::placeholder {
+        font-size: 0.85rem;
+    }
+
+    .message {
+        background-color: #190521;    
     }
     
     input {
         width: 100%;
+        height: 55px;
+    } 
+    
+    .textForm .btn, button {
+        height: 60px;
+        padding: 1em;
     }
-}
+}    
