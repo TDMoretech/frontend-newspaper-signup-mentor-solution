@@ -179,12 +179,12 @@ input {
         display: flex;
         flex-direction: column-reverse;
        background-color: none;
-        width: 85%;
+        width: 100%;
         border: none;
         border-radius: 0;
         padding-top: none;
         box-sizing: content-box;
-        min-height: 100vh;
+        min-height: 200vh;
     }
 
     .textForm {
