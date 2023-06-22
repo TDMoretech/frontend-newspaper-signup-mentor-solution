@@ -184,7 +184,7 @@ img {
         border-radius: 0;
         padding-top: none;
         box-sizing: content-box;
-        min-height: 135vh;
+        min-height: 100vh;
     }
 
     .textForm {
